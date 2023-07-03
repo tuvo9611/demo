@@ -15,7 +15,7 @@ public class StudentController {
     private final StudentService service;
 
     @PostMapping
-    public ResponseEntity<Student> create(@RequestParam Student student) {
+    public ResponseEntity<Student> create(@RequestBody Student student) {
         try {
             Student result = service.create(student);
             return new ResponseEntity<>(result, HttpStatus.CREATED);
