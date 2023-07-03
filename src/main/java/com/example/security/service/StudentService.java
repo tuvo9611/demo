@@ -5,13 +5,12 @@ import com.example.security.repository.StudentRepository;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.data.mongodb.core.MongoOperations;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.stereotype.Service;
 
 @Service
-//@NoArgsConstructor
 @RequiredArgsConstructor
 public class StudentService {
 
@@ -24,6 +23,8 @@ public class StudentService {
     public Student find(String id) {
         return repo.findById(id).orElse(null);
     }
+
+//    public
 
 
 }
